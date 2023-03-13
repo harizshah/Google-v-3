@@ -1,6 +1,5 @@
 import Head from 'next/head'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from 'components/Header'
 
 export default function Home() {
   return (
