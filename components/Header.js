@@ -8,18 +8,18 @@ export default function Header() {
     <header className="flex justify-between p-5 text-sm text-gray-700flex space-x-4">
         <div className="flex space-x-4 items-center">
           <Link href="https://about.google/">
-            <a className="link">About</a>
+            <p className="link">About</p>
           </Link>
           <Link href="https://store.google.com/">
-            <a className="link">Store</a>
+            <p className="link">Store</p>
           </Link>
         </div>
         <div className="flex space-x-4 items-center">
           <Link href="https://mail.google.com">
-            <a className="link">Gmail</a>
+            <p className="link">Gmail</p>
           </Link>
 
-            <a onClick={()=>router.push(`/search?term=${router.query.term || "google"}&searchType=image`)} className="link">Images</a>
+            <p onClick={()=>router.push(`/search?term=${router.query.term || "google"}&searchType=image`)} className="link">Images</p>
             <User/>
         </div>
     </header>
