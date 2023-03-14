@@ -8,6 +8,7 @@ const options = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  secret:process.env.SECRET,
   pages: {
     signIn: "/auth/signin",
   }
